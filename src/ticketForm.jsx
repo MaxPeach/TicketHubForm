@@ -112,21 +112,24 @@ function TicketForm() {
   };
 
   return (
-    <div className="card">
+    <div className="ticket-form">
       <h2>Submit Your Ticket</h2>
-      <form onSubmit={handleSubmit} className="form-grid">
-        {Object.entries(formData).map(([key, val]) => (
-          <div key={key}>
-            <input
-              name={key}
-              placeholder={key}
-              value={val}
-              onChange={handleChange}
-            />
-            {errors[key] && <small className="error">{errors[key]}</small>}
-          </div>
-        ))}
-        <button type="submit">Submit Ticket</button>
+      <form onSubmit={handleSubmit}>
+        <div className="grid">
+          {Object.entries(formData).map(([key, val]) => (
+            <div key={key} className="form-group">
+              <label>{key}</label>
+              <input
+                name={key}
+                placeholder={key}
+                value={val}
+                onChange={handleChange}
+              />
+              {errors[key] && <small className="error">{errors[key]}</small>}
+            </div>
+          ))}
+        </div>
+        <button type="submit" className="submit-btn">Submit Ticket</button>
       </form>
       {success && <p className="success">Ticket submitted successfully! 🎉</p>}
     </div>
