@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
 import './App.css';
+import kiss from './assets/kiss.jpg';
+import soad from './assets/soad.jpg';
+import slayer from './assets/slayer.jpg';
 
 const concerts = [
   { id: 1, name: 'Kiss', image: 'src/assets/kiss.jpg' },
