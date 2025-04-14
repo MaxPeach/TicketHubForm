@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom';
 import './App.css';
-import kiss from 'src/assets/kiss.jpg';
-import soad from 'src/assets/soad.jpg';
-import slayer from 'src/assets/slayer.jpg';
+
 
 const concerts = [
-  { id: 1, name: 'Kiss', image: 'src/assets/kiss.jpg' },
-  { id: 2, name: 'System Of A Down', image: 'src/assets/soad.jpg' },
-  { id: 3, name: 'Slayer', image: 'src/assets/slayer.jpg' }
+  { id: 1, name: 'Kiss', image: '/assets/kiss.jpg' },
+  { id: 2, name: 'System Of A Down', image: '/assets/soad.jpg' },
+  { id: 3, name: 'Slayer', image: '/assets/slayer.jpg' }
 ];
 
 function ConcertList() {
