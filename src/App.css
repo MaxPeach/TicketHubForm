@@ -23,14 +23,13 @@ h1, h2 {
   padding: 1rem 0;
 }
 
-.concert-card {
-  background: white;
-  width: 280px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
+.concert-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain; /* was 'cover' */
+  background-color: #f0f0f0; /* optional: to show any empty space */
 }
+
 
 .concert-card:hover {
   transform: translateY(-5px);
